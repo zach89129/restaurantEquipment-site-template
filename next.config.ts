@@ -2,14 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: [
-      "api.aq-fes.com",
-      "example.com",
-      "staterestaurant.com",
-      "staterestaurantequipment.com",
-      "cdn.staterestaurant.com",
-      "localhost",
-    ],
+    domains: ["api.aq-fes.com", "example.com", "localhost"],
     remotePatterns: [
       {
         protocol: "https",
@@ -32,7 +25,7 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
-  assetPrefix: "/StateApp",
+  assetPrefix: "/BusinessApp",
   trailingSlash: true,
 };
 

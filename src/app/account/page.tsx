@@ -1,5 +1,6 @@
 "use client";
 
+import { brandConfig } from "@/config/brand.config";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
@@ -145,7 +146,7 @@ export default function AccountPage() {
             <div className="ml-3">
               <p className="text-sm text-blue-700">
                 To update your account information or make changes to your
-                venues, please contact State Restaurant Supply directly.
+                venues, please contact {brandConfig.company.name} directly.
               </p>
             </div>
           </div>

@@ -5,67 +5,67 @@
 const vendors = [
   {
     name: "Arc Cardinal",
-    logo: "/vendor-logos/logo-arc-cardinal.avif",
+    logo: "/businessPartner.png",
     url: "https://www.cardinalfoodservice.com/",
   },
   {
     name: "BauscherHepp",
-    logo: "/vendor-logos/logo-bauscher-hepp.jpg",
+    logo: "/businessPartner.png",
     url: "https://bauscherhepp.com/",
   },
   {
     name: "Front of the House",
-    logo: "/vendor-logos/logo-front-of-the-house.avif",
+    logo: "/businessPartner.png",
     url: "https://www.frontofthehouse.com/",
   },
   {
     name: "Narumi",
-    logo: "/vendor-logos/logo-narumi.avif",
+    logo: "/businessPartner.png",
     url: "https://narumi.co.jp/eng/",
   },
   {
     name: "Oneida",
-    logo: "/vendor-logos/logo-oneida.avif",
+    logo: "/businessPartner.png",
     url: "https://www.foodservice.oneida.com/",
   },
   {
     name: "RAK Porcelain",
-    logo: "/vendor-logos/logo-rakporcelain.avif",
+    logo: "/businessPartner.png",
     url: "https://www.rakporcelain.com/",
   },
   {
     name: "Revol",
-    logo: "/vendor-logos/logo-revol.avif",
+    logo: "/businessPartner.png",
     url: "https://www.revol1768.com/",
   },
   {
     name: "Rosenthal",
-    logo: "/vendor-logos/rosenthal.avif",
+    logo: "/businessPartner.png",
     url: "https://www.rosenthal.de/en/",
   },
   {
     name: "Steelite",
-    logo: "/vendor-logos/logo-steelite.jpg",
+    logo: "/businessPartner.png",
     url: "https://www.steelite.com/",
   },
   {
     name: "10 Strawberry Street",
-    logo: "/vendor-logos/logo-strawberry-street.avif",
+    logo: "/businessPartner.png",
     url: "https://tenstrawberrystreet.com/",
   },
   {
     name: "Tuxton",
-    logo: "/vendor-logos/logo-tuxton.webp",
+    logo: "/businessPartner.png",
     url: "https://www.tuxton.com/",
   },
   {
     name: "Vertex China",
-    logo: "/vendor-logos/logo-vertex.jpg",
+    logo: "/businessPartner.png",
     url: "https://www.vertexchina.com/",
   },
   {
     name: "Villeroy & Boch",
-    logo: "/vendor-logos/villeroy-boch.avif",
+    logo: "/businessPartner.png",
     url: "https://www.villeroy-boch.com/",
   },
 ];
@@ -76,7 +76,7 @@ export default function ChinaAndFlatwarePage() {
       <div className="relative bg-zinc-900 text-white py-32 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-50 transform scale-105">
           <img
-            src="/StateHeroImage.webp"
+            src="/insertImageWider.png"
             alt="China and Flatware Background"
             className="w-full h-full object-cover transform scale-105 motion-safe:animate-subtle-zoom"
           />
@@ -84,10 +84,11 @@ export default function ChinaAndFlatwarePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/50 to-zinc-900/80" />
         <div className="relative z-10 container mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">
-            China and Flatware
+            (China and Flatware Title) China and Flatware
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto text-gray-200 mb-8">
-            Explore our premium selection of china and flatware manufacturers
+            (China and Flatware Subtitle) Explore our premium selection of china
+            and flatware manufacturers
           </p>
           <div className="flex justify-center">
             <a
@@ -117,14 +118,14 @@ export default function ChinaAndFlatwarePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Premium Quality Tableware
+              (China and Flatware Description Title) Premium Quality Tableware
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We partner with the world's leading manufacturers to bring you an
-              exceptional selection of china and flatware. Each piece is
-              carefully chosen for its quality, durability, and design
-              excellence to meet the demanding standards of the hospitality
-              industry.
+              (China and Flatware Description) We partner with the world's
+              leading manufacturers to bring you an exceptional selection of
+              china and flatware. Each piece is carefully chosen for its
+              quality, durability, and design excellence to meet the demanding
+              standards of the hospitality industry.
             </p>
           </div>
         </div>
@@ -194,7 +195,7 @@ export default function ChinaAndFlatwarePage() {
               solutions for your business.
             </p>
             <a
-              href="tel:+17027331515"
+              href="tel:+15555555555"
               className="inline-flex items-center gap-2 bg-white text-zinc-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               <svg

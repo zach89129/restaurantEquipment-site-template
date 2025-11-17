@@ -15,7 +15,7 @@ export default function Footer() {
                 alt={brandConfig.company.name}
                 width={150}
                 height={60}
-                className="brightness-0 invert"
+                className=""
               />
             </div>
             <div className="space-y-2">

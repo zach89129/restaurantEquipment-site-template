@@ -3,6 +3,7 @@
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
+import { brandConfig } from "@/config/brand.config";
 
 export default function RequestAccount() {
   return (
@@ -75,8 +76,8 @@ function RequestAccountContent() {
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="max-w-md w-full space-y-8 p-8 text-center">
           <Image
-            src="/StateLogoHeader.webp"
-            alt="State Restaurant Supply"
+            src={brandConfig.assets.logo}
+            alt={brandConfig.company.name}
             width={200}
             height={50}
             className="mx-auto"
@@ -85,7 +86,7 @@ function RequestAccountContent() {
             Request Submitted
           </h2>
           <p className="text-gray-600">
-            Thank you for your interest in State Restaurant Supply. Our team
+            Thank you for your interest in {brandConfig.company.name}. Our team
             will review your request and contact you if any further information
             is needed. You will receive a text message when your account has
             been created.
@@ -105,8 +106,8 @@ function RequestAccountContent() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-white p-4">
       <div className="mb-8">
         <Image
-          src="/StateLogoHeader.webp"
-          alt="State Restaurant Supply"
+          src={brandConfig.assets.logo}
+          alt={brandConfig.company.name}
           width={200}
           height={50}
         />
@@ -118,8 +119,8 @@ function RequestAccountContent() {
             Request an Account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Please complete the form below to request a State Restaurant Supply
-            account
+            Please complete the form below to request a{" "}
+            {brandConfig.company.name} account
           </p>
         </div>
 

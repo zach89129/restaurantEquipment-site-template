@@ -12,52 +12,52 @@ interface TeamMember {
 export default function ContactPage() {
   const teamMembers: TeamMember[] = [
     {
-      name: "Scott Miller",
+      name: "John Doe",
       title: "President",
-      phone: "(702) 733-1515",
-      image: "/team/StateScott.avif",
+      phone: "555-555-5555",
+      image: "/team/maleAvatar.png",
     },
     {
-      name: "Joe Stafford",
+      name: "Jane Doe",
       title: "Vice President Sales",
-      phone: "(702) 733-1515",
-      image: "/team/StateJoe.webp",
+      phone: "555-555-5555",
+      image: "/team/femaleAvatar.png",
     },
     {
-      name: "Candice DeLanis",
+      name: "John Doe",
       title: "Account Executive",
-      phone: "(702) 733-1515",
-      image: "/team/StateCandice.avif",
+      phone: "555-555-5555",
+      image: "/team/maleAvatar.png",
     },
     {
-      name: "Matthew O'Neill",
+      name: "John Doe",
       title: "Account Executive",
-      phone: "(702) 733-1515",
-      image: "/team/StateMatthew.avif",
+      phone: "555-555-5555",
+      image: "/team/maleAvatar.png",
     },
     {
-      name: "Ashley McClure",
+      name: "Jane Doe",
       title: "Account Executive",
-      phone: "(702) 733-1515",
-      image: "/team/StateAshley.jpg",
+      phone: "555-555-5555",
+      image: "/team/femaleAvatar.png",
     },
     {
-      name: "John Holley",
+      name: "John Doe",
       title: "Account Executive",
-      phone: "(702) 733-1515",
-      image: "/team/StateJohn.webp",
+      phone: "555-555-5555",
+      image: "/team/maleAvatar.png",
     },
     {
-      name: "Kim Garnett-Livengood",
+      name: "Jane Doe",
       title: "Purchasing Manager",
-      phone: "(702) 733-1515",
-      image: "/team/StateKim.webp",
+      phone: "555-555-5555",
+      image: "/team/femaleAvatar.png",
     },
     {
-      name: "Larry Doroff",
+      name: "Jane Doe",
       title: "Equipment Specialist",
-      phone: "(702) 733-1515",
-      image: "/team/StateLarry.webp",
+      phone: "555-555-5555",
+      image: "/team/femaleAvatar.png",
     },
   ];
 
@@ -65,9 +65,9 @@ export default function ContactPage() {
     <PageContainer title="Contact">
       {/* Team Members Grid */}
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-20">
-        {teamMembers.map((member) => (
+        {teamMembers.map((member, index) => (
           <TeamMemberCard
-            key={member.name}
+            key={member.title + index}
             name={member.name}
             title={member.title}
             image={member.image}
@@ -95,13 +95,13 @@ export default function ContactPage() {
                   clipRule="evenodd"
                 />
               </svg>
-              3163 South Highland Drive
+              1234 Address Street
             </p>
             <p className="text-gray-800 text-sm sm:text-base">
-              Las Vegas, Nevada 89109
+              City, State 12345
             </p>
             <a
-              href="tel:7027331515"
+              href="tel:5555555555"
               className="text-gray-800 hover:text-blue-600 transition-colors duration-300 inline-flex items-center gap-2 py-2"
             >
               <svg
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
               <span className="font-semibold whitespace-nowrap text-sm sm:text-base">
-                (702) 733-1515
+                (555) 555-5555
               </span>
             </a>
           </div>

@@ -25,86 +25,79 @@ export const brandConfig = {
 
   // Contact Information
   contact: {
-    phone: process.env.NEXT_PUBLIC_PHONE || "(555) 123-4567",
-    email: process.env.NEXT_PUBLIC_EMAIL || "info@example.com",
+    phone: "(555) 123-4567",
+    email: "info@example.com",
     address: {
-      street: process.env.NEXT_PUBLIC_ADDRESS || "123 Business Park Drive",
-      city: process.env.NEXT_PUBLIC_CITY || "Las Vegas",
-      state: process.env.NEXT_PUBLIC_STATE || "NV",
-      zip: process.env.NEXT_PUBLIC_ZIP || "89101",
-      country: process.env.NEXT_PUBLIC_COUNTRY || "USA",
+      street: "123 Business Park Drive",
+      city: "City",
+      state: "State",
+      zip: "Zip",
+      country: "USA",
     },
   },
 
+  //   NEXT_PUBLIC_LOGO_PATH="/businessLogo.png"
+  // NEXT_PUBLIC_ICON_PATH="/businessLogo.png"
+  // NEXT_PUBLIC_ABOUT_IMAGE="/insertImageWide.png"
+  // NEXT_PUBLIC_HERO_IMAGE="/insertImageWider.png"
+
   // Asset Paths (relative to /public directory)
   assets: {
-    logo: process.env.NEXT_PUBLIC_LOGO_PATH || "/logo.webp",
-    icon: process.env.NEXT_PUBLIC_ICON_PATH || "/icon.png",
-    heroImage: process.env.NEXT_PUBLIC_HERO_IMAGE || "/hero.webp",
-    aboutImage: process.env.NEXT_PUBLIC_ABOUT_IMAGE || "/about-building.webp",
-    catalogImage: process.env.NEXT_PUBLIC_CATALOG_IMAGE || "/catalog.webp",
-    foodDisplayImage:
-      process.env.NEXT_PUBLIC_FOOD_DISPLAY_IMAGE || "/food-display.webp",
-    videoThumbnail:
-      process.env.NEXT_PUBLIC_VIDEO_THUMBNAIL || "/video-thumbnail.webp",
-    plateCard: process.env.NEXT_PUBLIC_PLATE_CARD || "/plate-card.webp",
-    qualityCard: process.env.NEXT_PUBLIC_QUALITY_CARD || "/quality-card.webp",
-    integrityCard:
-      process.env.NEXT_PUBLIC_INTEGRITY_CARD || "/integrity-card.webp",
+    logo: "/businessLogo.png",
+    icon: "/businessLogo.png",
+    heroImage: "/insertImageWider.png",
+    aboutImage: "/insertImageWide.png",
+    catalogImage: "/insertImageWider.png",
+    foodDisplayImage: "/insertImageWider.png",
+    videoThumbnail: "/insertImage.png",
+    plateCard: "/insertImageWider.png",
+    qualityCard: "/insertImage.png",
+    integrityCard: "/insertImage.png",
   },
 
   // Feature Flags
   features: {
-    showShowroom: process.env.NEXT_PUBLIC_SHOW_SHOWROOM !== "false",
-    showAbout: process.env.NEXT_PUBLIC_SHOW_ABOUT !== "false",
-    showVendorCatalogs:
-      process.env.NEXT_PUBLIC_SHOW_VENDOR_CATALOGS !== "false",
-    showVideoTutorial: process.env.NEXT_PUBLIC_SHOW_VIDEO_TUTORIAL !== "false",
-    showChinaFlatware: process.env.NEXT_PUBLIC_SHOW_CHINA_FLATWARE !== "false",
-    showPromotions: process.env.NEXT_PUBLIC_SHOW_PROMOTIONS !== "false",
+    showShowroom: true,
+    showAbout: true,
+    showVendorCatalogs: true,
+    showVideoTutorial: true,
+    showChinaFlatware: true,
+    showPromotions: true,
   },
 
   // Business Details (customize per customer)
   business: {
     // Showroom details
     showroom: {
-      size: process.env.NEXT_PUBLIC_SHOWROOM_SIZE || "80,000",
-      sizeUnit: process.env.NEXT_PUBLIC_SHOWROOM_SIZE_UNIT || "sq ft",
-      hasWarehouse: process.env.NEXT_PUBLIC_HAS_WAREHOUSE !== "false",
+      size: "80,000",
+      sizeUnit: "sq ft",
+      hasWarehouse: true,
     },
 
     // Service area
     serviceArea: {
-      primary:
-        process.env.NEXT_PUBLIC_SERVICE_AREA ||
-        "Las Vegas and surrounding area",
-      servesOutOfState: process.env.NEXT_PUBLIC_SERVES_OUT_OF_STATE === "true",
-      openToPublic: process.env.NEXT_PUBLIC_OPEN_TO_PUBLIC === "true",
+      primary: "City, State and surrounding area",
+      servesOutOfState: true,
+      openToPublic: true,
     },
 
     // Partnerships/memberships
-    memberships: process.env.NEXT_PUBLIC_MEMBERSHIPS
-      ? process.env.NEXT_PUBLIC_MEMBERSHIPS.split(",")
-      : ["SEFA, Inc."],
+    memberships: ["SEFA, Inc."],
   },
 
   // Social Media & Links
   social: {
-    facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || "",
-    twitter: process.env.NEXT_PUBLIC_TWITTER_URL || "",
-    instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || "",
-    linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL || "",
+    facebook: "",
+    twitter: "",
+    instagram: "",
+    linkedin: "",
   },
 
   // SEO & Metadata
   seo: {
-    defaultTitle: process.env.NEXT_PUBLIC_SEO_TITLE || "Restaurant Supply Co",
-    defaultDescription:
-      process.env.NEXT_PUBLIC_SEO_DESCRIPTION ||
-      "Premier restaurant equipment and supply specialists",
-    keywords:
-      process.env.NEXT_PUBLIC_SEO_KEYWORDS ||
-      "restaurant equipment, foodservice supplies, commercial kitchen",
+    defaultTitle: "Restaurant Supply Co",
+    defaultDescription: "Premier restaurant equipment and supply specialists",
+    keywords: "restaurant equipment, foodservice supplies, commercial kitchen",
   },
 };
 

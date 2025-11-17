@@ -10,11 +10,11 @@ export default function AboutPage() {
   // NOTE: Update this array with customer-specific client logos
   // Replace with actual customer logos in /public directory
   const clients = [
-    { name: "Client 1", image: "/clients/client-1.webp" },
-    { name: "Client 2", image: "/clients/client-2.webp" },
-    { name: "Client 3", image: "/clients/client-3.webp" },
-    { name: "Client 4", image: "/clients/client-4.webp" },
-    { name: "Client 5", image: "/clients/client-5.webp" },
+    { name: "Client 1", image: "/businessPartner.png" },
+    { name: "Client 2", image: "/businessPartner.png" },
+    { name: "Client 3", image: "/businessPartner.png" },
+    { name: "Client 4", image: "/businessPartner.png" },
+    { name: "Client 5", image: "/businessPartner.png" },
   ];
 
   const { company, contact, business } = brandConfig;
@@ -23,14 +23,15 @@ export default function AboutPage() {
     <PageContainer title="About Us">
       <div className="space-y-16">
         <Section title="Reputation">
-          Our Company is known for, and has been built upon, our outstanding
-          reputation for quality, service and strong business ethics. No matter
-          what your needs, we assure you they will be done with your best
-          interest in mind.
+          (About Section 1 Text) Our Company is known for, and has been built
+          upon, our outstanding reputation for quality, service and strong
+          business ethics. No matter what your needs, we assure you they will be
+          done with your best interest in mind.
         </Section>
 
         {business.memberships.length > 0 && (
           <Section title="National Partnership">
+            (About Section 2 Text)
             {company.name} is a proud member of{" "}
             {business.memberships.join(", ")}, a nationwide network of premier
             foodservice equipment and supply specialists. We partner with
@@ -50,21 +51,21 @@ export default function AboutPage() {
         )}
 
         <Section title="Our Organization">
-          We are built on the concept that our personnel are the best in the
-          industry. Our sales staff can assist you when placing your order by
-          phone and in person. If you should decide to visit our showroom and
-          warehouse facility, we welcome you.
+          (About Section 3 Text) We are built on the concept that our personnel
+          are the best in the industry. Our sales staff can assist you when
+          placing your order by phone and in person. If you should decide to
+          visit our showroom and warehouse facility, we welcome you.
         </Section>
 
         {/* Gradient Separator */}
         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 
         <CallToAction phoneNumber={contact.phone}>
+          (Call To Action Text)
           <p>
             Let us put our proven reputation for quality, service and value to
             work for you. Whether you&apos;re remodeling or opening a new
-            facility,
-            {company.name} is your link to success.
+            facility, {company.name} is your link to success.
           </p>
           <p className="mt-6">
             We serve {business.serviceArea.primary} and work with leading

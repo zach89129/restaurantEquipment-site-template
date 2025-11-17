@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VideoTutorialPage() {
   return (
@@ -7,7 +8,7 @@ export default function VideoTutorialPage() {
       <div className="container mx-auto px-4 py-8 sm:py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900 text-center">
-            State Restaurant Video Tutorials
+            (Video Tutorial Title) Company website Video Tutorials
           </h1>
 
           {/* Main Tutorial Video */}
@@ -21,12 +22,18 @@ export default function VideoTutorialPage() {
             </p>
             <div className="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg sm:shadow-2xl">
               <div className="aspect-w-16 aspect-h-9">
-                <iframe
+                {/* <iframe
                   src="https://www.youtube.com/embed/M0HMtk82mN4"
                   title="State Restaurant Equipment Website Tutorial"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="w-full h-full"
+                /> */}
+                <Image
+                  src="/insertVideo.png"
+                  alt="Video Tutorial"
+                  width={1000}
+                  height={1000}
                 />
               </div>
             </div>

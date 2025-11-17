@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { brandConfig } from "@/config/brand.config";
 
 const isValidEmail = (email: string): boolean => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -59,7 +60,7 @@ export default function LoginForm() {
           setError({
             message:
               data.message ||
-              "No phone number on file. Please contact State Restaurant.",
+              `No phone number on file. Please contact ${brandConfig.company.name}.`,
             code: data.code,
           });
           return;
@@ -108,7 +109,7 @@ export default function LoginForm() {
               <>
                 <p className="text-red-700">{error.message}</p>
                 <p className="text-sm text-red-600 mt-1">
-                  (702) 733-1515 or info@staterestaurant.com
+                  {brandConfig.contact.phone} or {brandConfig.contact.email}
                 </p>
               </>
             )}
