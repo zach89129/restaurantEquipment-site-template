@@ -68,7 +68,9 @@ export const authOptions: AuthOptions = {
 
             // Check if user is superuser
             const isSuperuser = customer.email === process.env.SUPERUSER_ACCT;
-            const isSalesTeam = customer.email.includes("staterestaurant.com");
+            const isSalesTeam = customer.email.includes(
+              "restaurantTemplate.com"
+            );
 
             // Format venues for session
             const venues = customer.venues.map((venue) => ({
